@@ -60,14 +60,40 @@ $$(".r-header").tap(function(){
 		console.log(data);
 	});
 });
+/**
 $$(".app-body").tap(function(){
 	$.get(host+'/omx/pause',function(data){
 		console.log(data);
 	});
 });
+**/
 $(".search input").change(function() {
 	Youtube.getVideo($(this).val(), socket);
  });
+ 
+$$(".r-c-play").tap(function(){
+	$.get(host+'/omx/pause',function(data){
+		console.log(data);
+	});
+});
+$$(".r-c-back").tap(function(){
+	socket.emit('controll',{action:"back"}); 
+});
+$$(".r-c-rewind").tap(function(){
+	socket.emit('controll',{action:"rewind"}); 
+});
+$$(".r-c-pause").tap(function(){
+	socket.emit('controll',{action:"pause"}); 
+});
+$$(".r-c-stop").tap(function(){
+	socket.emit('controll',{action:"stop"}); 
+});
+$$(".r-c-forward").tap(function(){
+	socket.emit('controll',{action:"forward"}); 
+});
+$$(".r-c-next").tap(function(){
+	socket.emit('controll',{action:"next"}); 
+});
  
  socket.on("loading", function(data){
 	 console.log(data);

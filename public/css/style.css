@@ -235,6 +235,24 @@ margin: 0 0 0 -24px;
 	opacity: 0.3;
 }
 
+.r-controls{
+	position: absolute;
+	top: 60;
+	margin-top: 30;
+	width: 100%;
+	background-color: transparent;
+	top: 60px;
+	height: 80px;
+	text-align: center;
+	font-family: "Open-Bold";
+	color: rgba(255,255,255,0.6);
+	z-index: 9999;
+}
+.r-control {
+	height: 42px;
+	width: 42px;
+}
+
 .flex-control-nav {
 	text-align: center;
 }
@@ -384,7 +402,7 @@ html[xmlns] .slides {display: block;}
 .app-body {
 position: absolute;
 left: 0;
-top: 60px;
+top: 140px;
 max-width: 640px;
 min-width: 320px;
 z-index: 99999;
