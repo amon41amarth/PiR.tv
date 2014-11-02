@@ -316,6 +316,10 @@ margin: 0 0 0 -24px;
 	right: -36px;
 }
 
+.app-inactive {
+    display: none;
+}
+
 
 /*
  * jQuery Flex.list-wrapper {
